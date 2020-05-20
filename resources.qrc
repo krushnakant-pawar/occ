@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>webcam.png</file>
+        <file>dese.png</file>
+        <file>iisc.gif</file>
+        <file>accident-anim.gif</file>
+        <file>white.png</file>
+        <file>title.gif</file>
+        <file>black.jpg</file>
+    </qresource>
+    <qresource prefix="/files">
+        <file>car-tail-lamp-cascade-20stages.xml</file>
+    </qresource>
+</RCC>
