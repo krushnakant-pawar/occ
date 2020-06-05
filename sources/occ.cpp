@@ -390,6 +390,10 @@ DECODED_DATA processFrame(Mat frame) {
             cout << "Classifier not loaded" << endl;
             return decoded_data;
         }
+        // generic
+//        classifier.detectMultiScale(grayscale_image, features, 1.5, 4, 0 | 1,
+//                                    cv::Size(10, 10));
+
         classifier.detectMultiScale(grayscale_image, features, 1.5, 4, 0 | 1,
                                     cv::Size(10, 10));
 

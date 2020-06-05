@@ -55,7 +55,12 @@ void MainWindow::updateWorkerUI(QImage img, QVector<uint8_t> msg, int frameDelay
         int sum = std::accumulate(msg.begin(), msg.end(), 0);
         if(sum != 0)
         {
-            //cout << std::bitset<8>(msg.toStdVector()[0]) << "\t" << std::bitset<8>(msg.toStdVector()[1]) << endl;
+            vector<uint8_t> logging = msg.toStdVector();
+//            for(auto && m : logging)
+//            {
+//                cout << std::bitset<8>(m)<< "\t";
+//            }
+//            cout << endl;
             QString textMsg = "";
             MsgFormat allMsgs[msg.size()];
 
